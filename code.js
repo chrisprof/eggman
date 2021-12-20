@@ -1,6 +1,6 @@
 var bal=0;
             var mult=1;
-            var price=50;
+            var price=1000;
             var item=2;
             var hat = false;
             var tux = false;
@@ -38,7 +38,7 @@ var bal=0;
                     item*=2;
                     price*=mult;
                     
-                    while(price>50*mult)
+                    while(price>1000*mult)
                     {
                         price/=2;
                     }
