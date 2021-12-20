@@ -6,7 +6,7 @@ var bal=0;
             var tux = false;
             var mus = false;
             var mon = false;
-            var prices = [20000000,300000000,1000000000000,999999999999999999];
+            var prices = [250,1250,2500,5000];
             var isBought=[false,false,false,false];
             var isSafari = window.safari !== undefined;
 
