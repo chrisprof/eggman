@@ -1,0 +1,62 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="icon" href="/logo.png"/>
+        <link rel="stylesheet" href="/style.css"
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Eggman</title>
+        <script src="code.js"></script>
+    </head>
+
+    <body onload="startGame()">
+            <div>
+                
+                <p>Coins:</p>
+                <p id="coins">0</p>
+                
+            </div>
+        
+            <div id="shopui">
+                
+                <h3 id="shoph">SHOP</h3> 
+                <button id="shopbtn1"></button> 
+                <button id="buyBtn"  onclick="buy()"></button>
+                
+            </div>
+        
+            <div id="avatarui">
+                
+                <h3 id="avatarh">AVATAR</h3>
+                <button id="next" class="nab">></button>
+                <button id="back" class="nab">&#60</button>
+                
+                <img id="avatar" src="/plain.png" alt="avatar"/>
+                
+                <img class="accessory" id="mus1" src="/mus.png">
+                
+                <img class="accessory"id="tux1" src="/tux.png">
+                
+                <img class="accessory"id="hat1" src="/hat.png">
+                
+                <img class="accessory" id="mon1" src="/mon.png"/>
+                
+                <button id="hat" onclick="buyItem(this.id)"class="avatarbtn">BUY Hat: 20000000c</button>
+                
+                <button id="mus" onclick="buyItem(this.id)" class="avatarbtn">BUY Mustache: 300000000c</button>
+                <button id="tux" onclick="buyItem(this.id)" class="avatarbtn">BUY Tuxedo: 1000000000000c</button>
+                <button id="mon" onclick="buyItem(this.id)" class="avatarbtn">BUY Monocle: 999999999999999999c</button>
+            </div>
+                    
+        
+            <div id="titleBackground">
+        
+                <h1 id="title">EGG</h1>
+
+            </div>
+            <div id="buttonDiv">
+                <button id="mainButton" type="button" onclick="btnClicked()">CLICK</button>
+            </div>
+        
+    </body>
+</html>
