@@ -1,4 +1,4 @@
-            @keyframes rainbowCycle{
+@keyframes rainbowCycle{
                 7% {background-color:#FF9AA2;}
                 21%{background-color:#FFB7B2;}
                 36%{background-color: #FFDAC1;}
@@ -34,6 +34,7 @@
             
             button{
                 border:none;
+                font-family:monospace;
             }
             
             #titleBackground{
@@ -172,14 +173,13 @@
                 height: 75px;
                 border-radius: 10px;
                 background-color: white;
+                transition: background-color 0.5s;
                 position:absolute;
             }
             
             .avatarbtn:hover
             {
-                animation-name: hoverAnim;
-                animation-duration: 0.5s;
-                animation-iteration-count: infinite;
+                background-color:#cfcfcf;
                 
             }
             
@@ -230,14 +230,5 @@
                 border-radius: 10px;
                 font-size:30px;
                 margin-top:-101px;
-                
-            }
-            
-            #next{
-                margin-left:250px;
-            }
-            
-            #back{
-                margin-left:10px;
                 
             }
