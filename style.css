@@ -173,13 +173,13 @@
                 height: 75px;
                 border-radius: 10px;
                 background-color: white;
-                transition: background-color 0.5s;
+                transition: background-color 0.2s;
                 position:absolute;
             }
             
             .avatarbtn:hover
             {
-                background-color:#cfcfcf;
+                background-color:#eee0ee;
                 
             }
             
