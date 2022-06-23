@@ -2,59 +2,47 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <link rel="icon" href="/logo.png"/>
-        <link rel="stylesheet" href="/style.css"
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="./static/images/eggman.png"/>
+        <link rel="stylesheet" href="/style.css"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
         <title>Eggman</title>
-        <script src="code.js"></script>
     </head>
 
-    <body onload="startGame()">
-            <div>
-                
-                <p>Coins:</p>
-                <p id="coins">0</p>
-                
+    <body>
+        <div id="bal" class="coins-div">Coins: 0</div> 
+        <div class="parent-container">    
+            <div class="shop-div main-container">
+                <h1 class="main-titles">MULTIPLIER SHOP</h1>
+                <div class="multiplier-container">
+                    2x
+                </div>
+                <button class="buy-button" id="buy-btn" onclick="buyMult()">BUY: 100c</button>
             </div>
-        
-            <div id="shopui">
-                
-                <h3 id="shoph">SHOP</h3> 
-                <button id="shopbtn1"></button> 
-                <button id="buyBtn"  onclick="buy()"></button>
-                
+            <div class="center-div main-container">
+                <div class="title-div">
+                    EGGMAN
+                </div>
+                <button id="click-button" onclick="addclick()">CLICK</button>
             </div>
-        
-            <div id="avatarui">
-                
-                <h3 id="avatarh">AVATAR</h3>
-                
-                <img id="avatar" src="/plain.png" alt="avatar"/>
-                
-                <img class="accessory" id="mus1" src="/mus.png">
-                
-                <img class="accessory"id="tux1" src="/tux.png">
-                
-                <img class="accessory"id="hat1" src="/hat.png">
-                
-                <img class="accessory" id="mon1" src="/mon.png"/>
-                
-                <button id="hat" onclick="buyItem(this.id)"class="avatarbtn">BUY Hat: 20000000c</button>
-                
-                <button id="mus" onclick="buyItem(this.id)" class="avatarbtn">BUY Mustache: 300000000c</button>
-                <button id="tux" onclick="buyItem(this.id)" class="avatarbtn">BUY Tuxedo: 1000000000000c</button>
-                <button id="mon" onclick="buyItem(this.id)" class="avatarbtn">BUY Monocle: 999999999999999999c</button>
-            </div>
-                    
-        
-            <div id="titleBackground">
-        
-                <h1 id="title">EGG</h1>
+            <div class="avatar-div main-container">
+                <h1 class="main-titles">AVATAR</h1>
+                <div class="avatar-container">
+                    <div class="avatar-container-child">
+                        <img id="eggman" class="main-image" src="./static/images/eggman.png"/>
+                        <img id="Monocle" class="avatar-image" src="./static/images/monocle.png"/>
+                        <img id="Richmug" class="avatar-image" src="./static/images/richmug.png"/>
+                        <img id="Tophat" class="avatar-image" src="./static/images/tophat.png"/>
+                        <img id="Tuxedo" class="avatar-image" src="./static/images/tuxedo.png"/>
+                        <img id="Chicky" class="avatar-image" src="./static/images/chicky.gif"/>
 
+                    </div>
+                </div>
+                <div class="avatar-items-shop" id="avatar-shop">
+                    <h1 id="avatar-shop-title" class="main-titles">SHOP</h1>
+                </div>
             </div>
-            <div id="buttonDiv">
-                <button id="mainButton" type="button" onclick="btnClicked()">CLICK</button>
-            </div>
-        
+            <script src="./script.js"></script>    
+        </div>
     </body>
+    
 </html>
