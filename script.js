@@ -1,6 +1,6 @@
 if(screen.availWidth<740)
 {
-    window.location.href="/mobile.html"
+    window.location.href="mobile.html"
 }
 
 else{

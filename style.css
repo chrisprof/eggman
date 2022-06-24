@@ -206,7 +206,7 @@ body{
 }
 
 
-/* width */
+/* SCROLLBAR STYLES */
 ::-webkit-scrollbar {
     width: 15px;
   }
@@ -225,3 +225,12 @@ body{
   ::-webkit-scrollbar-thumb:hover {
     background: rgb(31, 28, 59);
   }
+
+/* MOBILE WEBSITE */
+
+.mobile-page-cont{
+    display:flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
