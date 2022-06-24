@@ -1,3 +1,12 @@
+if(screen.availWidth<740)
+{
+    window.location.href="/index.html"
+}
+
+else{
+    console.log(screen.width)
+}
+
 let items = [
     ['Tuxedo' ,10000],
     ['Monocle',50000],

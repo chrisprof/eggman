@@ -36,18 +36,17 @@ body{
 .main-titles{
     font-size: 75%;
     margin:0;
-    padding:2% 0% 0% 0%;
+    padding:2%;
     font-weight: lighter;
     color: #ffffff;
 }
 
 #click-button{
-    width:60%;
-    height:20%;
+    padding: 10%;
     
     border:none;
     
-    font-size: 40px;
+    font-size: 140%;
     transition: all 0.25s;
 
     margin: 20% 0% 0% 0%;
@@ -58,8 +57,7 @@ body{
 }
 
 #click-button:hover{
-    width: 99%;
-    height: 33%;
+    padding:15%;
     font-size: 50px;
     animation-name: rainbowCycle;
     animation-duration: 1s;
@@ -111,7 +109,7 @@ body{
     background-color: #ffffff;
     width:70%;
     height: 50%;
-    margin:5% 5% 5% 5%;
+    margin:0% 5% 5% 5%;
     padding: 0%;
 }
 
@@ -147,7 +145,7 @@ body{
 
 .avatar-image{
     position: absolute;
-    width:14.25%;
+    width:15%;
     height:auto;
     margin:0;
     opacity: 0;
@@ -155,7 +153,7 @@ body{
 
 .main-image{
     position: absolute;
-    width:14.25%;
+    width:15%;
     height:auto;
     margin:0;
     opacity: 1;
