@@ -3,10 +3,6 @@ if(screen.availWidth<740)
     window.location.href="/eggman/mobile.html"
 }
 
-else{
-    console.log(screen.width)
-}
-
 let items = [
     ['Tuxedo' ,10000],
     ['Monocle',50000],
@@ -30,8 +26,8 @@ if(!localStorage.getItem('balance') || !localStorage.getItem('multiplier') || !l
 
 function checkShop()
 {                         
-   document.getElementById('buy-btn').innerHTML="BUY: "+localStorage.getItem('multiplierPrice')+"c";
-   document.querySelector('.multiplier-container').innerHTML=localStorage.getItem('multiplierItem')+"x";
+   document.getElementById('buy-btn').innerHTML="BUY: "+localStorage.getItem('multiplierPrice').toLocaleString("en-US")+"c";
+   document.querySelector('.multiplier-container').innerHTML=localStorage.getItem('multiplierItem').toLocaleString("en-US")+"x";
    
 }
 
@@ -42,7 +38,7 @@ function poor()
 
 function updateCoins()
 {
-    document.getElementById('bal').innerHTML='Coins: '+localStorage.getItem('balance')
+    document.getElementById('bal').innerHTML='Coins: '+localStorage.getItem('balance').toLocaleString("en-US")
 }
 
 
@@ -144,7 +140,6 @@ function startGame(){
 function addclick(){
     localStorage.setItem('balance',Number(localStorage.getItem('balance'))+1*JSON.parse(localStorage.getItem('multiplier')))
     updateCoins()
-    console.log(bal)
 }
 
 startGame()
